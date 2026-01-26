@@ -13,7 +13,7 @@ export default function Home() {
       <p className="text-sm text-muted-foreground mt-2">
         Checkout the{' '}
         <Link
-          href="https://github.com/llm-psychology-group/wahl-chat-web-embedding"
+          href="https://github.com/wahl-chat/wahl-chat-web-embedding"
           className="underline"
           target="_blank"
         >
