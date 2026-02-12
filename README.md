@@ -10,13 +10,17 @@ The hosted version of this example can be found on [https://embed-example.wahl.c
 
 **Optional:**
 
-- `party_id` - The ID of the party you want to display. You can pass multiple party IDs to the iFrame URL. 
+- `context_id` - The election context to open in the iFrame (for example `bundestagswahl-2025`).
+- `party_id` - The IDs of the parties you want to display. You can pass up to 7 `party_id` parameters.
+- Example URL for opening a specific context:
+  - `https://wahl.chat/api/embed?tenant_id=[YOUR_TENANT_ID]&context_id=bundestagswahl-2025`
 - Example URL for starting a conversation with the SPD:
-  - `https://wahl.chat/api/embed?tenant_id=[YOUR_TENANT_ID]&party_id=spd`
+  - `https://wahl.chat/api/embed?tenant_id=[YOUR_TENANT_ID]&context_id=bundestagswahl-2025&party_id=spd`
 - Example URL for starting a conversation with the SPD and the CDU/CSU:
-  - `https://wahl.chat/api/embed?tenant_id=[YOUR_TENANT_ID]&party_id=spd&party_id=cdu`
+  - `https://wahl.chat/api/embed?tenant_id=[YOUR_TENANT_ID]&context_id=bundestagswahl-2025&party_id=spd&party_id=cdu`
 
-- The `party_id` parameter is optional. If you don't pass it, the iFrame will open with the default conversation.
+- The `party_id` parameter is optional. If you don't pass it, the iFrame will open on the context landing page.
+- The `context_id` parameter is optional. If you don't pass it, the default context is used.
 
 
 **Note:**
