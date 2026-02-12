@@ -83,7 +83,7 @@ export default function Form() {
 
       try {
         const partyOptions = await fetchPartiesForContext(
-          contextId,
+          contextId!,
           controller.signal
         );
         setParties(partyOptions);
